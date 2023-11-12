@@ -1,0 +1,3 @@
+Pillow
+tqdm
+scikit-image
