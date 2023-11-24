@@ -3,6 +3,7 @@ from PIL import Image
 import argparse
 
 
+# Grayscaling function
 def convert_to_grayscale(input_folder, output_folder):
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder):
@@ -27,7 +28,7 @@ def convert_to_grayscale(input_folder, output_folder):
             grayscale_image.save(output_path)
 
 
-def main():
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert images in a folder to grayscale and save in another folder.")
     parser.add_argument("input_folder", help="Path to the folder containing images")
     parser.add_argument("output_folder", help="Path to the folder where grayscale images will be saved")
@@ -35,7 +36,3 @@ def main():
     args = parser.parse_args()
 
     convert_to_grayscale(args.input_folder, args.output_folder)
-
-
-if __name__ == "__main__":
-    main()

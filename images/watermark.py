@@ -2,6 +2,7 @@ import argparse
 from PIL import Image, ImageDraw, ImageFont
 
 
+# Watermarking function
 def add_watermark(input_path, output_path, watermark_text, position="bottom-right", font_size=20, opacity=128):
     with Image.open(input_path) as img:
         # Create a copy of the image to add the watermark

@@ -2,6 +2,7 @@ import argparse
 from PIL import Image
 
 
+# Rotation function
 def rotate_image(input_path, output_path, degrees):
     with Image.open(input_path) as img:
         rotated_img = img.rotate(degrees)

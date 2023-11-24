@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 
+# Histogram generator function
 def generate_histogram(input_path, output_path=None):
     with Image.open(input_path) as img:
         # Generate the histogram

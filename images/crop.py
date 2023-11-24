@@ -2,6 +2,7 @@ import argparse
 from PIL import Image
 
 
+# Cropping function
 def crop_image(input_path, output_path, left, top, right, bottom):
     with Image.open(input_path) as img:
         cropped_img = img.crop((left, top, right, bottom))
